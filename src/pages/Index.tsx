@@ -549,14 +549,26 @@ const Index = () => {
                       <Icon name="Phone" className="h-5 w-5 text-primary" />
                       Телефон
                     </h3>
-                    <p className="text-muted-foreground">+7 (999) 123-45-67</p>
+                    <a 
+                      href="https://t.me/is964" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      +7 964 646 46 45
+                    </a>
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg mb-2 flex items-center gap-2">
                       <Icon name="Mail" className="h-5 w-5 text-primary" />
                       Email
                     </h3>
-                    <p className="text-muted-foreground">info@bolshaya-zemlya.ru</p>
+                    <a 
+                      href="mailto:da@bolshaya-zemlya.ru"
+                      className="text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      da@bolshaya-zemlya.ru
+                    </a>
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg mb-2 flex items-center gap-2">
