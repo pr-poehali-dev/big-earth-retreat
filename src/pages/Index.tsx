@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
@@ -6,6 +7,7 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import Icon from '@/components/ui/icon';
 
 const Index = () => {
+  const navigate = useNavigate();
   const [activeSection, setActiveSection] = useState('home');
 
   const scrollToSection = (sectionId: string) => {
@@ -222,7 +224,15 @@ const Index = () => {
           </p>
           <div className="grid md:grid-cols-3 gap-8">
             {retreats.map((retreat, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow animate-fade-in">
+              <Card 
+                key={index} 
+                className="hover:shadow-lg transition-shadow animate-fade-in cursor-pointer"
+                onClick={() => {
+                  if (retreat.title === 'Ретрит в темноте') {
+                    navigate('/retreat/dark');
+                  }
+                }}
+              >
                 <CardHeader>
                   <div className="flex items-center justify-between mb-2">
                     <CardTitle className="text-2xl font-serif">{retreat.title}</CardTitle>
@@ -239,6 +249,12 @@ const Index = () => {
                       </li>
                     ))}
                   </ul>
+                  {retreat.title === 'Ретрит в темноте' && (
+                    <Button variant="outline" className="w-full mt-4">
+                      Узнать подробнее
+                      <Icon name="ArrowRight" className="h-4 w-4 ml-2" />
+                    </Button>
+                  )}
                 </CardContent>
               </Card>
             ))}
