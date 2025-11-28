@@ -197,11 +197,12 @@ const Index = () => {
             Большая Земля
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 animate-fade-in font-light">
-            Место силы для трансформации и единения с природой
+            Место силы для трансформации и уединения с природой
           </p>
           <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto animate-fade-in">
-            Уникальный ретритный центр, где практикуется философия Ахимсы. Здесь вы обретёте внутреннюю силу, 
-            гармонию с собой и окружающим миром.
+            Уникальный ретритный центр, где смешиваются древние техники народов мира и современные практики трансформации. 
+            Здесь практикуется философия Ахимсы и синтез мудрости разных культур — от шаманских традиций до передовых методов работы с сознанием. 
+            Обретите внутреннюю силу, гармонию с собой и окружающим миром.
           </p>
           <div className="flex gap-4 justify-center animate-scale-in">
             <Button size="lg" onClick={() => scrollToSection('retreats')} className="text-lg">
@@ -267,10 +268,11 @@ const Index = () => {
       <section id="philosophy" className="py-20 px-4">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-5xl font-serif font-bold text-center text-primary mb-4">
-            Философия Ахимсы
+            Синтез традиций и практик
           </h2>
-          <p className="text-center text-muted-foreground mb-12 text-lg">
-            Принцип ненасилия — основа нашей жизни
+          <p className="text-center text-muted-foreground mb-12 text-lg max-w-3xl mx-auto">
+            Мы объединяем мудрость древних народов с современными технологиями трансформации. 
+            Философия Ахимсы — принцип ненасилия и сострадания — лежит в основе всех наших практик
           </p>
           <div className="grid md:grid-cols-2 gap-8">
             <Card className="animate-fade-in">
