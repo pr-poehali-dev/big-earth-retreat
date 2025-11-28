@@ -270,7 +270,7 @@ const Index = () => {
             Территория и природа
           </h2>
           <p className="text-center text-muted-foreground mb-12 text-lg max-w-2xl mx-auto">
-            200 гектаров заповедного леса, кристально чистое озеро, места силы древних практик
+            12 гектаров заповедного леса, кристально чистое озеро, места силы древних практик
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             <Card className="animate-fade-in">
