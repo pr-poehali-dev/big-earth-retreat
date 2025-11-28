@@ -190,7 +190,7 @@ const Index = () => {
             <img 
               src="https://cdn.poehali.dev/files/1893dee9-ffab-495f-b0d1-e61817e0272c.jpg" 
               alt="Большая Земля" 
-              className="h-48 w-48 object-contain mx-auto mb-6"
+              className="h-48 w-48 object-contain mx-auto mb-6 bg-[#f5f1e8] rounded-full p-4"
             />
           </div>
           <h1 className="text-6xl md:text-7xl font-serif font-bold text-primary mb-6 animate-fade-in">
