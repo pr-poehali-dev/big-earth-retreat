@@ -9,12 +9,10 @@ const Navigation = ({ scrollToSection }: NavigationProps) => {
     <nav className="fixed top-0 w-full bg-background/95 backdrop-blur-sm z-50 border-b border-border">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <img 
-              src="https://cdn.poehali.dev/files/1893dee9-ffab-495f-b0d1-e61817e0272c.jpg" 
-              alt="Большая Земля" 
-              className="h-12 w-12 object-contain"
-            />
+          <div className="flex items-center gap-3 cursor-pointer" onClick={() => scrollToSection('home')}>
+            <div className="h-12 w-12 rounded-full bg-primary flex items-center justify-center">
+              <div className="h-10 w-10 rounded-full border-4 border-background"></div>
+            </div>
             <span className="text-2xl font-serif font-semibold text-primary">Большая Земля</span>
           </div>
           <div className="hidden md:flex gap-6">

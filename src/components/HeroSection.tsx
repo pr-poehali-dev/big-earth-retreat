@@ -9,11 +9,9 @@ const HeroSection = ({ scrollToSection }: HeroSectionProps) => {
     <section id="home" className="pt-32 pb-20 px-4">
       <div className="container mx-auto text-center max-w-4xl">
         <div className="mb-8 animate-fade-in">
-          <img 
-            src="https://cdn.poehali.dev/files/1893dee9-ffab-495f-b0d1-e61817e0272c.jpg" 
-            alt="Большая Земля" 
-            className="h-48 w-48 object-contain mx-auto mb-6"
-          />
+          <div className="h-48 w-48 rounded-full bg-primary flex items-center justify-center mx-auto mb-6">
+            <div className="h-40 w-40 rounded-full border-8 border-background"></div>
+          </div>
         </div>
         <h1 className="text-6xl md:text-7xl font-serif font-bold text-primary mb-6 animate-fade-in">
           Большая Земля
